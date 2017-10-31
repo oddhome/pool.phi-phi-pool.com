@@ -2,3 +2,5 @@ home/ubuntu/.bitcore/bitcore.conf
 home/
 var/web/serverconfig.php
 root/.my.cnf
+root/
+var/wallet/

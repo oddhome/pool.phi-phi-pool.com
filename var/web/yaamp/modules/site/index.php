@@ -56,15 +56,20 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600)." hours";
 <ul>
 
 <li>
-BTX:<br />
+Algo: bitcore
 <p class="main-left-box" style='padding: 3px; font-size: .8em; background-color: #ffffee; font-family: monospace;'>
 	-o stratum+tcp://<?= YAAMP_STRATUM_URL ?>:3556 -u &lt;WALLET_ADDRESS&gt; -p c=BTX</p>
 </li>
 
-SMART:
+Algo: keccak:
 <p class="main-left-box" style='padding: 3px; font-size: .8em; background-color: #ffffee; font-family: monospace;'>
 	-o stratum+tcp://<?= YAAMP_STRATUM_URL ?>:5133 -u &lt;WALLET_ADDRESS&gt; -p c=SMART</p>
 </li>
+
+<!-- Algo: M7M
+<p class="main-left-box" style='padding: 3px; font-size: .8em; background-color: #ffffee; font-family: monospace;'>
+	-o stratum+tcp://<?= YAAMP_STRATUM_URL ?>:6033 -u &lt;WALLET_ADDRESS&gt; -p c=SMART</p>
+</li> -->
 
 <?php if (YAAMP_ALLOW_EXCHANGE): ?>
 <li>&lt;WALLET_ADDRESS&gt; can be one of any currency we mine</li>
